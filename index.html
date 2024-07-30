@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>チーム分けをしよう！</title>
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="css/bulma.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Potta+One&family=Rampart+One&family=Zen+Maru+Gothic:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <h1 class="title is-has-text-warning-light	hsl(48, 100%, 96%)">Team division</h1>
+            <div class="field">
+                <label class="label">Member</label>
+                <div class="control">
+                    <textarea id="membersInput" class="textarea is-primary" placeholder="読点で区切って名前を入力してね！"></textarea>
+                </div>
+                <br>
+                <div class="field">
+                    <label class="label">group</label>
+                    <div class="control">
+                        <div class="select is-primary">
+                            <select id="groupCount">
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field is-grouped is-grouped-centered">
+                    <p>
+                    <button onclick="divideGroups()" class="button is-danger is-medium is-outlined">Go</button>
+                    <button onclick="clearInput()" class="button is-primary is-medium is-outlined">Clear</button>
+                    </p>
+                </div>
+                <br>
+                <div id="message"></div>
+                <div id="output"></div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

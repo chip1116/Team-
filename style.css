@@ -1,0 +1,33 @@
+/* Bulmaを利用しているため参照していません　*/
+
+body {
+        /* font-family: "Potta One", system-ui;
+        font-weight: 400;
+        font-style: normal; */
+    
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#app {
+    text-align: center;
+}
+
+textarea {
+    width: 300px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.box {
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid #e7c22e;
+    width: 300px;
+    text-align: left;
+}
